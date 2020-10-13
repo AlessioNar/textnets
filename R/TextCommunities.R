@@ -12,7 +12,6 @@
 #' 
 
 
-
 TextCommunities<-function(text_network, alpha=.25){
   
   

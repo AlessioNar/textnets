@@ -1,3 +1,16 @@
+#' @title Cluster network object
+#'
+#' @description This function clusters the network objects based on the Louvain community detection algorithm
+#'
+#' @param tidytext Tidytext object created by PrepText or PrepTextSent
+#' 
+#' @return Network object
+#'
+#' @examples \dontrun{TextCommunities(text_network, alpha =.50)}
+#'
+#' @export TextCommunities
+#' 
+
 # One of the principal virtues of creating text networks is that one can apply
 # community detection algorithms to them in order to cluster documents according
 # to similarities in their content. This approach has some nice advantages over

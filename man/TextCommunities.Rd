@@ -13,7 +13,7 @@ TextCommunities(text_network, alpha = 0.25)
 Network object
 }
 \description{
-This function clusters the network objects based on the Louvain community detection algorithm
+This function clusters the network objects based on the Louvain community detection algorithm. One of the principal virtues of creating text networks is that one can apply community detection algorithms to them in order to cluster documents according to similarities in their content. This approach has some nice advantages over topic modeling
 }
 \examples{
 \dontrun{TextCommunities(text_network, alpha =.50)}

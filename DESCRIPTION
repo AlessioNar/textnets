@@ -6,8 +6,8 @@ Authors@R: c(
     person("Chris", "Bail", email = "christopher.bail@duke.edu", role = c("aut", "cre")))
 Maintainer: Chris Bail <christopher.bail@duke.edu>
 Description: Package for analyzed unstructured text data using network analysis and natural language processing.
-URL: https://github.com/cbail/textnets
-BugReports: https://github.com/cbail/textnets/issues
+URL: https://github.com/AlessioNar/textnets
+BugReports: https://github.com/AlessioNar/textnets/issues
 Depends:
     R (>= 3.5),
     dplyr (>= 0.7.4),
@@ -26,4 +26,4 @@ Suggests:
 SystemRequirements: Optional Python Spacy Backend for Part of Speech Tagging
 NeedsCompilation: no
 License: None
-RoxygenNote: 6.0.1
+RoxygenNote: 7.1.1

@@ -1,12 +1,15 @@
-#### CREATING NETWORK OBJECTS FROM TEXT DATASETS
-
-# This is the workhorse function of the package, it requires a tidy text
-# dataset as created by PrepText or PrepTextSent, and a) calculates the term 
-# frequency inverse document frequency of each word; b) creates a weighted adjacency 
-# matrix where the rows and columns are the groups and the cells describe the sum of 
-# overlapping TFIDF between them; and c) creates an igraph object from this adjacency 
-# matrix. For PrepTextSent objects, b) will be multiplied by the sentiment and the 
-# cells in c) are the overlapping TFIDF-sentiment products.
+#' @title Create Network Objects from text datasets
+#'
+#' @description This function calculates the term frequency inverse document frequency of each word, creates a weighted adjacency matrix where the rows and columns are the groups and the cells describe the sum of overlapping TFIDF between them; and c) creates an igraph object from this adjacency matrix. PrepTextSent objects will be multiplied by the sentiment and the returning cells are the overlapping TFIDF-sentiment products.
+#'
+#' @param tidytext Tidytext object created by PrepText or PrepTextSent
+#' 
+#' @return Network object
+#'
+#' @examples \dontrun{CreateTextnet(tidytextobject)}
+#'
+#' @export CreateTextnet
+#' 
 
 CreateTextnet <- function(tidytextobject){
   
